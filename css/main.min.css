@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=main.min.css.map */
+:root{--main-blue: #2196F3;--text-grey: #757575;--title-grey: #212121;--dark-back: #2F303A;--light-back: #F5F4FA;--white: #ffffff;--text-white6: rgba(255, 255, 255, 0.6)}ul{list-style:none;padding:0;margin:0}a{text-decoration:none}body{color:var(--text-grey);font-family:'Roboto', sans-serif;letter-spacing:0.03em}h1,h2,h3{color:var(--title-grey);margin-top:0;margin-bottom:0}img{display:block;max-width:100%;height:auto}.logo{display:inline-block;color:var(--main-blue);font-family:'Raleway', sans-serif;font-weight:700;font-size:26px;line-height:1.19}.logo-header{margin-right:93px}.logo__part--black{color:#000000}.logo__part--white{color:var(--white)}
+/*# sourceMappingURL=main.min.css.map */

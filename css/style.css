@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-blue: #2196F3;
   --text-grey: #757575;
   --title-grey: #212121;
@@ -34,7 +34,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .img {
   max-width: 100%;
@@ -91,7 +91,7 @@ button {
 
 
 /* Шапка */
-.header {
+.page-header {
   background-color: var(--white);
   border-bottom: 1px solid #ECECEC;
   padding-top: 24px;
@@ -99,8 +99,8 @@ button {
   height: 80px;
 }
 
-.header .container,
-.header-nav,
+.page-header .container,
+.page-header-nav,
 .header-pages,
 .header-contacts {
   display: flex;
@@ -180,9 +180,8 @@ button {
   fill: currentColor;
 }
 
-/* Лого */
-.header-logo, 
-.footer-logo {
+/* Лого
+.logo {
   color: var(--main-blue);
 
   font-family: 'Raleway', sans-serif;
@@ -191,16 +190,16 @@ button {
   line-height: 1.19;
 }  
 
-.header-logo {
+.logo__part--black {
   margin-right: 93px;}
 
-.header-logo span {
+.logo__part--black {
   color: #000000;
 }
 
-.footer-logo span {
+.logo__part--white {
   color: var(--white);
-}
+} */
 
 /* Герой */
 .hero {
