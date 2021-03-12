@@ -61,6 +61,8 @@ button {
   height: 50px;
   min-width: 200px;
   padding: 10px;
+
+  cursor: pointer;
    
   background-color: var(--main-blue);
   color: var(--white);
@@ -78,7 +80,7 @@ button {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .btn ,.modal .btn {
+.hero-btn ,.modal__btn {
   margin-left: auto;
   margin-right: auto;
 }
@@ -91,7 +93,7 @@ button {
 
 
 /* Шапка */
-.header {
+/* .header {
   background-color: var(--white);
   border-bottom: 1px solid #ECECEC;
   padding-top: 24px;
@@ -107,7 +109,8 @@ button {
   align-items: center;
 }
 
-.nav-list__item, .header-contacts__item {
+.nav-list__item,
+.header-contacts__item {
   margin-right: 50px;
 }
 
@@ -116,7 +119,7 @@ button {
   margin-right: 0;
 }
 
-.nav-list__item a {
+.nav-list__link {
   padding-top: 32px;
   padding-bottom: 32px;  
 
@@ -130,17 +133,17 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__item a:hover,
-.nav-list__item a:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--main-blue);
 }
 
-.nav-list__item .current {
+.nav-list__link--current {
   position: relative;
   color: var(--main-blue);
 }
 
-.nav-list__item .current::after {
+.nav-list__link--current::after {
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -155,9 +158,10 @@ button {
 }
 
 .header-contacts {
-  margin-left: auto;}
+  margin-left: auto;
+}
 
-.header-contacts a {
+.header-contacts__link {
   display: flex;
    
   color: var(--text-grey);
@@ -168,17 +172,17 @@ button {
   letter-spacing: 0.02em;
 }
 
-.header-contacts a:hover,
-.header-contacts a:focus {
+.header-contacts__link:hover,
+.header-contacts__link:focus {
   color: var(--main-blue);
 }
 
-.contact-icon {
+.header-contacts__icon {
   align-self: center;
   margin-right: 10px;  
    
   fill: currentColor;
-}
+} */
 
 /* Лого
 .logo {
@@ -201,7 +205,7 @@ button {
   color: var(--white);
 } */
 
-/* Герой */
+/* Герой
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -221,7 +225,7 @@ button {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -233,7 +237,7 @@ button {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-}
+} */
 
 /* /Sections&grid */
 .features, .specialty, .our-team, .portfolio, .customers {
