@@ -693,7 +693,7 @@ specialty-list__title {
   transform: translateY(0);
 }
  
-/* Заказать услугу, модальное окно */
+/* Заказать услугу, модальное окно
 
 .backdrop {
   position: fixed;
@@ -739,12 +739,12 @@ specialty-list__title {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal__title {
+.modal-form__title {
   margin: 0;
   margin-bottom: 12px;
   
@@ -754,7 +754,7 @@ specialty-list__title {
   text-align: center;
 }  
 
-.modal__close-btn {
+.btn-close {
   position: absolute;
   left: calc(100% - 38px);
   top: 8px;
@@ -766,17 +766,17 @@ specialty-list__title {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white);
   
-  &:hover .close-icon,
-  &:focus .close-icon {
+  &:hover .btn-close__icon,
+  &:focus .btn-close__icon {
     fill: var(--main-blue);
   }
 }
 
-.modal__close-icon{
+.btn-close__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal label { 
+.modal-form__label { 
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -784,49 +784,14 @@ specialty-list__title {
   line-height: 1.167;
    
   letter-spacing: 0.01em;
-
-  cursor: pointer;
-}  
-
-.modal input, textarea {
-  padding: 11px;
-  padding-left: 40px;
-  
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
- 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal input:focus, textarea:focus{
-  border: 1px solid var(--main-blue);
-  outline: none;
-}
-
-textarea {
-  resize: none;
-  padding: 12px 16px;
-
-  margin-bottom: 20px;
-  min-height: 120px;
-}
-
-textarea::placeholder {
-  font-size: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+} 
 
 .input-wrapper {
   position: relative;
   margin-bottom: 10px;
 }
 
-.input-wrapper input {
-  width: 100%;
-}
-
-.modal-icon {
+.modal-form__icon{
   position: absolute;
   left: 0;
   top: 0;
@@ -836,12 +801,55 @@ textarea::placeholder {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal input:focus+.modal-icon{
-  fill: var(--main-blue);
+.modal-form__input {
+  padding: 11px;
+  padding-left: 40px;
+
+  width: 100%;
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+ 
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid var(--main-blue);
+    outline: none;
+  }
+  
+  &:focus+.modal-form__icon {
+    fill: var(--main-blue);
+  }
+}
+
+.modal-form__textarea {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  padding-left: 40px;
+  
+  resize: none;
+  min-height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+ 
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus{
+    border: 1px solid var(--main-blue);
+    outline: none;
+  }
+
 }
 
 /* Cоглашение с условиями договора */
-label.agree {
+.modal-form__agree-label {
   display: flex;
   margin-bottom: 30px;
   
@@ -851,13 +859,13 @@ label.agree {
   justify-content: center;
 }
 
-label.agree a {
+.modal-form__agree-link {
   margin-left: 5px;
   color: var(--main-blue);
   text-decoration: underline var(--main-blue);
 }
 
-.check-icon {
+.modal-form__check-icon{
   margin-right: 7px;
   align-self: center;
   border: 2px solid var(--title-grey);
@@ -869,11 +877,12 @@ label.agree a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agree-check:checked + .check-icon {
-  border: none;
-}
+.modal-form__agree-check:checked {
+  & + .check-icon {
+    border: none;
+  }
 
-.agree-check:checked + .check-icon use {
-  opacity: 1;
-}
-
+  & + .check-icon use {
+    opacity: 1;
+  }
+} 
