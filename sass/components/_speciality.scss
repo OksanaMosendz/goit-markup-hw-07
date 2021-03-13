@@ -1,0 +1,31 @@
+.specialty {
+  padding-top: 0;
+}
+
+.specialty-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.specialty-thumb {
+  position: relative;
+
+  height: 294px;
+}
+
+.specialty-list__title {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  height: 70px;
+  width: 370px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white);
+ 
+  background: rgba(47, 48, 58, 0.8);
+}

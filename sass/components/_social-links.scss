@@ -1,0 +1,41 @@
+.social-networks {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+}
+
+.social-networks__link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),  
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, 
+  &:focus {
+    color: var(--white);
+    background-color: var(--main-blue);
+    outline: none;
+  }
+}
+
+.social-networks__team-link {
+  color: #AFB1B8;
+  border-radius: 50%;
+}
+
+.social-networks__join-link {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-networks__icon {
+  fill: currentColor;
+}
