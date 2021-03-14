@@ -1,7 +1,33 @@
-.thumb__img {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body { 
+  color: var(--text-grey);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,h2,h3 {
+  color: var(--title-grey);
+  margin-top: 0;
+  margin-bottom: 0;
+} 
+
+img {
+  display: block;
   max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  height: auto;
+}
+
+button, label {
+  cursor: pointer;
 }
 
 .container {
@@ -24,4 +50,8 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin main-transition ($property) {
+  transition: $property 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
