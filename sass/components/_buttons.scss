@@ -10,10 +10,8 @@
     
   border: none;
   
-  @include font(700, 16px, 1.87, var(--white));
+  @include font(700, 16px, 1.87, var(--white), 0.06em);
   
-  letter-spacing: 0.06em;
-
   @include main-transition2(box-shadow, background-color); 
  
   &:hover,

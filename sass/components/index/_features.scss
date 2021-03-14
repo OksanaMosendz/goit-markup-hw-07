@@ -9,7 +9,7 @@
 }
 
 .features-list__title {
-  @include font(700, 14px, 1.14, inherit);
+  @include font(700, 14px, 1.14, var(--title-grey), inherit);
 
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -21,7 +21,7 @@
 }
 
 .features-list__text {
-  @include font(400, 14px, 1.71, inherit);
+  @include font(400, 14px, 1.71, inherit, inherit);
   
   margin: 0;
 }

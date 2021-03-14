@@ -22,11 +22,6 @@
   margin-left: auto;
   margin-right: auto;
   
-  color: var(--white);
-
   text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.36, var(--white), 0.06em);
 }

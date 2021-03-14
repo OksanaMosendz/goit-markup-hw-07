@@ -16,7 +16,7 @@
 .footer-contacts {
   
   font-style: normal;
-  @include font(400, 14px, 1.71, inherit);
+  @include font(400, 14px, 1.71, inherit, inherit);
   
   display: flex;
   flex-direction: column;
@@ -41,7 +41,6 @@
   &:focus {
     color: var(--main-blue);
   }
-
 }
 
 /* Присоеденяйтесь */
@@ -55,10 +54,9 @@
   margin-bottom: 20px;
   
   
-  @include font(700, 14px, 1.14, var(--white));
+  @include font(700, 14px, 1.14, var(--white), inherit);
   
   text-transform: uppercase;
-   
 }
 
 /* Подписывайтесь на рассылку */
@@ -88,12 +86,8 @@
 
   &::placeholder {
 
-    @include font(400, 16px, 1.25, rgba(255, 255, 255, 0.6));
-    
-    letter-spacing: 0.03em;
-    
+    @include font(400, 16px, 1.25, rgba(255, 255, 255, 0.6), 0.03em);
   }
-
 }
 
 .sign-btn__icon { 

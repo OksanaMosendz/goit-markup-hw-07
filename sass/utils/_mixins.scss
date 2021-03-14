@@ -1,3 +1,16 @@
+@mixin flexible () 
+{ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin font($weight, $size, $line-height, $color, $letter-spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;}
+
 @mixin main-transition ($property)
  { transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
@@ -16,15 +29,3 @@
     $property3 250ms cubic-bezier(0.4, 0, 0.2, 1),
     $property4 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@mixin flexible () 
-{ display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin font($weight, $size, $line-height, $color) {
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $line-height;
-  color: $color;}
