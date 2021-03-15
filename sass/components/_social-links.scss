@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.social-networks__link {
+.social__link {
   @include flexible();
   
   height: 44px;
@@ -22,17 +22,17 @@
   }
 }
 
-.social-networks__team-link {
+.social__team-link {
   color: #AFB1B8;
   border-radius: 50%;
 }
 
-.social-networks__join-link {
+.social__join-link {
   color: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
-.social-networks__icon {
+.social__icon {
   fill: currentColor;
 }

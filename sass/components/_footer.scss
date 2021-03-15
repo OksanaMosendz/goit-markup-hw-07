@@ -12,9 +12,7 @@
   align-items: baseline;
 }
 
-.footer__location,
-.footer-contacts {
-  
+.footer-address {  
   font-style: normal;
   @include font(400, 14px, 1.71, inherit, inherit);
   
@@ -22,14 +20,14 @@
   flex-direction: column;
 }
 
-.footer__location {
+.address__location {
   margin: 0;
   margin-top: 20px;
       
   color: var(--white);
 }
 
-.footer-contacts__link {
+.address__link {
   display: inline-block;
   margin-top: 9px;
 
@@ -46,7 +44,7 @@
 /* Присоеденяйтесь */
 
 .join {
-  margin-left: 70px;
+  margin-left: auto;
 } 
 
 .join__title, .sign__title {
@@ -67,9 +65,10 @@
 
 .sign-form {
   display: flex;
+  justify-content: end;
 }
 
-.sign-form__input {
+.sign__input {
   margin-right: 12px;
   padding: 15px 16px;
 
@@ -90,7 +89,7 @@
   }
 }
 
-.sign-btn__icon { 
+.sign__icon { 
   margin-left: 10px;
   fill: var(--white);
 }

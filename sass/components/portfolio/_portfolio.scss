@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.portfolio-filter__item {
+.filter__item {
   margin-right: 8px;
 
   &:last-child {
@@ -15,7 +15,7 @@
   }
 }
 
-.portfolio-filter__btn {
+.filter__btn {
   padding: 6px 22px;
   
   background-color: var(--light-back);
@@ -42,13 +42,13 @@
 
 /* Список-портфолио */
 
-.portfolio-list__item {
+.portfolio__item {
   flex-basis: calc(100% / 3 - 30px);
 
   background-color: var(--white);
 }
 
-.portfolio-list__link {
+.portfolio__link {
   display: block;
 
   @include main-transition2(box-shadow, outline);
@@ -105,7 +105,7 @@
   }
 }
 
-.portfolio-thumb__img {
+.portfolio__img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
