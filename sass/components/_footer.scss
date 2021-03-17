@@ -27,10 +27,13 @@
   color: var(--white);
 }
 
+.address-item {
+  margin-top: 9px;
+}
+
 .address__link {
   display: inline-block;
-  margin-top: 9px;
-
+  
   color: var(--text-white6);
 
   @include main-transition(color);

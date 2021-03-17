@@ -8,7 +8,7 @@
 
 }
 
-.features-list__title {
+.features__subtitle {
   @include font(700, 14px, 1.14, var(--title-grey), inherit);
 
   text-transform: uppercase;

@@ -17,7 +17,7 @@
   padding: 30px 32px;
 }
 
-.team-list__title {
+.team__subtitle {
   margin-bottom: 10px;
 
   @include font(500, 16px, 1.18, var(--title-grey), inherit);
